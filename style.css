@@ -1,7 +1,7 @@
 h3{
     text-align : center;
-    color: blue;
-    font-style: italic;
+    color: black;
+    font-style: normal;
     
 }
 .skill-header{
@@ -48,4 +48,89 @@ h4{
     100% {
       background-position: 100% 50%;
     }
+  }
+  .profile-card {
+    text-align: center;
+    height: 450px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: #b5d6e1;
+    border-radius: 20px;
+  }
+  .profile-content {
+    padding-inline: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .a {
+    position: relative;
+  
+    color: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+   
+    transition: 0.5s;
+  }
+  .a:hover {
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 5px #000, 0 0 5px, 0 0 50px #000, 0 0 100px #000,
+      0 0 200px#000;
+  }
+  .a::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+  }
+  .a span {
+    position: relative;
+    z-index: 1;
+  }
+  .a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  .a i::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+  
+    transform: translateX(-50%) skewX(325deg);
+    transform: 0.5s;
+  }
+  .a:hover i::before {
+    width: 10px;
+    left: 10%;
+  }
+  .a i::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .a:hover i::after {
+    width: 20px;
+    left: 80%;
+  }
+  .gradiant-bgg{
+    font-size: 72px;
+    font-weight: bold;
+    background: linear-gradient( #03045e, #023e8a, #0077b6, #0096c7, #00b4d8, #48cae4);
+    background-size: 40%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
